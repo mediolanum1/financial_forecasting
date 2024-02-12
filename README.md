@@ -22,7 +22,8 @@ To get the **sentiment score** we use a pre-trained model BERT. We use news arti
 
 ## Usage
 
-The file `main.py` in the `src` directory contains a simple interface for using the program.
+The file `predict.ipynb` contains a programm that will make a predicition and compare it with actuall data.
+This repo contains trained model, processed dataset and all necessary data for `predict.ipynb` to work so download all files in repo. 
 
 To execute, use:
 
