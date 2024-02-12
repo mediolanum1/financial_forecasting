@@ -3,15 +3,9 @@
 # Financial Forecasting
 
 ## Abstract
-
-Stock markets or equity markets have a profound impact in today’s economy. A rise or fall in the share price has an important role in determining the investor’s gain.
-The existing forecasting methods make use of both linear (AR,MA,ARIMA) and non-linear algorithms (ARCH,GARCH,Neural Networks),
-but they focus on predicting the stock index movement or price forecasting for a single company using the daily closing price. 
-
-The proposed method is a model-independent approach. Here we are not fitting the data to a specific model, rather we are identifying the latent dynamics existing 
-in the data using deep learning architectures. In this work, we use three different deep learning architectures for the price prediction of NSE listed companies
-and compare their performance. We are applying a sliding window approach for predicting future values on a short term basis. The performance of the models was
-quantified using percentage error. Index Terms—Time series, Stock market, RNN,LSTM,CNN
+In the dynamic landscape of financial markets, the ability to accurately predict stock prices has long been a pursuit of great interest and significance.
+The intertwining factors of market behavior, economic indicators, and global events create a complex ecosystem that challenges traditional forecasting methods. As technology advances, the integration of artificial intelligence and machine learning techniques has opened new avenues for predicting stock market movements with enhanced precision.
+This scientific report explores the topic of stock market price prediction by using the power of two innovative technologies: Long Short-Term Memory (LSTM) neural networks and Sentiment Analysis of news articles.
 
 ## Usage
 
