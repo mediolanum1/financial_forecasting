@@ -1,2 +1,2 @@
-![Project Header](/figures/label.png)
+![Project Header](/figures/label.PNG)
 
