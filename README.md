@@ -1,4 +1,4 @@
-![Project Header](/figures/label.PNG)
+![image](https://github.com/mediolanum1/financial_forecasting/assets/105869692/c4b14840-0180-4c07-be9d-3b4b4d6d83f5)![Project Header](/figures/label.PNG)
 
 # Financial Forecasting
 
@@ -21,6 +21,12 @@ Predictor4 works the best based on our testing.
 they can both be run as is as long as you have all the files in that folder.
 
 ## Implementation of LSTM with sentiment analysis
+
+We use 2 datasets: Apple(AAPL) Stock Data(2015-2020) and a collection of news articles regarding Apple company for that time peroid that we collected using free API.
+After combining these datasets and adding the sentiment_score field for each article we were left with 6188 entries, 70% of which were used for training and other 30% for validation
+
+![Data](/figures/data.PNG)
+
 
 We use an LSTM and an GRU both with 50 units to predict the price of the stock, as an input for model we give information for the past day about stock's closing prices, stock's volumes and **sentiment score**. We assume that these 3 are the most important parameters as for example information about lowest price or highest price that dataset has doesn't give much information as for example price in the end of the day when news about stock already affected price and etc. 
 
