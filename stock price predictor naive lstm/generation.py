@@ -66,7 +66,7 @@ prediction=model.predict(trainining)
 #plot the predicted prices compared to the actual prices
 plt.figure()
 plt.plot(date, prediction, label='predictions')
-plt.plot(date, dataset[company][len(dataset[company])-200:len(dataset[company])-(200-len(date))], label='actual')
+plt.plot(date, correct, label='actual')
 plt.title('prediction vs actual')
 plt.xlabel('date')
 plt.ylabel('prices')
