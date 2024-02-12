@@ -22,4 +22,9 @@ To get the **sentiment score** we use a pre-trained model BERT. We use news arti
 
 
 
-![Motion Detection Algorithm](/figures/motion_detection_algorithm.png)
+## Authors
+
+
+:link: [Robert Li](https://github.com/mediolanum1)
+
+:link: [Tom Lewis](https://github.com/tom837)
