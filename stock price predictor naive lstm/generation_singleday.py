@@ -30,7 +30,7 @@ def get_data(strt,seq_length,data_length,dataset):
     return training,validation
 
 
-#if you want to have day by day prediction as oposed to 30 day prediction comment out previous part and uncomment this part
+#if you want to have day by day prediction
 seq_len=60
 dataset_len=200
 trainining=[]
