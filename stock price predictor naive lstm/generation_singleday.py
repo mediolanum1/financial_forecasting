@@ -2,19 +2,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
-model=tf.keras.models.load_model("predictor4")
+model=tf.keras.models.load_model("stock price predictor naive lstm/predictors/predictor4")
 
 company=0
 
 #get dataset
 dataset=[]
-df = pd.read_csv('AAPL.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/AAPL.csv')
 dataset.append(df["close"].tolist())
-df = pd.read_csv('GOOG.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/GOOG.csv')
 dataset.append(df["Close"].tolist())
-df = pd.read_csv('NFLX.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/NFLX.csv')
 dataset.append(df["Close"].tolist())
-df = pd.read_csv('Tesla.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/Tesla.csv')
 dataset.append(df["Close"].tolist())
 
 #same as in training except we only take the data for each sepetate company at a time
