@@ -75,7 +75,7 @@ plt.show()
 
 #simulate earnings
 
-test_correct= dataset[company][len(dataset[company])-200:len(dataset[company])-(200-len(date))]
+test_correct= correct
 
 money=10000
 
