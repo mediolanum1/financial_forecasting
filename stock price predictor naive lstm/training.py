@@ -5,17 +5,17 @@ import random
 
 #get the whole dataset 
 dataset=[]
-df = pd.read_csv('AAPL.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/AAPL.csv')
 dataset.append(df["close"].tolist())
-df = pd.read_csv('GOOG.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/GOOG.csv')
 dataset.append(df["Close"].tolist())
-df = pd.read_csv('NFLX.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/NFLX.csv')
 dataset.append(df["Close"].tolist())
-df = pd.read_csv('Tesla.csv')
+df = pd.read_csv('stock price predictor naive lstm/datasets/Tesla.csv')
 dataset.append(df["Close"].tolist())
 
 #import the model
-model=tf.keras.models.load_model("predictor4")
+model=tf.keras.models.load_model("stock price predictor naive lstm/predictors/predictor4")
 
 #get all the data partitioned into (seq_long) samples (except the last 200 we keep for testing later to insure no overfiting)
 def get_data(seq_length,dataset):
@@ -51,7 +51,7 @@ val_cor=tf.constant(val_cor)
 
 #train the model on the data and save it (batch_size and epochs can be played around with to find the ideal numbers)
 history = model.fit(trainining, correct, epochs=900, batch_size=32, validation_data=(val,val_cor))
-model.save("predictor4")
+model.save("stock price predictor naive lstm/predictors/predictor4")
 
 
 
