@@ -20,8 +20,11 @@ File  `predict.ipynb` contains code for making predictions only without the need
 
 If you want to see how data is processed, model trained and ect go to `main.ipynb` and run all the cells. If you want to see only the end result use `predict.ipynb`.
 
-The file stock predictor naive lstm contains the naive LSTM. the creation of the model, the training of the model and 'generation.py' gives predictions based on the model selected.
-Predictor4 works the best based on our testing. 'generation.py' can be run as is as long as you have all the files in that folder.
+The file `stock predictor naive lstm` contains the naive LSTM. the creation of the model, the training of the model and
+`stock predictor naive lstm/generation_sigleday.py` give day-by-day predictions based on the model selected.
+`stock predictor naive lstm/generation_multipledays.py` predicts several days in advance.
+Predictor4 works the best based on our testing. 
+they can both be run as is as long as you have all the files in that folder.
 
 ## Implementation of LSTM with sentiment analysis
 
