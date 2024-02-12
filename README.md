@@ -20,6 +20,8 @@ The file `stock predictor naive lstm` contains the naive LSTM. the creation of t
 Predictor4 works the best based on our testing. 
 they can both be run as is as long as you have all the files in that folder.
 
+Additional details can be found in the [Technical Report](/reports/Technical_Report.pdf)
+
 ## Implementation of LSTM with sentiment analysis
 
 We use 2 datasets: Apple(AAPL) Stock Data(2015-2020) and a collection of news articles regarding Apple company for that time peroid that we collected using free API.
