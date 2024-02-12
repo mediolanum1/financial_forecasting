@@ -50,9 +50,8 @@ In conclusion, we can deduce that the analysis of the news is a strong help in p
 
 ## Usage
 
-The file `predict.ipynb` contains a programm that will make a predicition and compare it with actual data.
-This repo contains trained model, processed dataset and all necessary data for `predict.ipynb` to work so download all files in repo. 
-
+The file `main.ipynb` contains all the code needed for data preparation, model creation, training, and prediction.
+This repo also contains a trained model, processed dataset, and all necessary data for `main.ipynb`, so you don't have to train the model or download files and ect. 
 
 
 To change the video that is being used for detection, replace the `video_path` value in line 18 of `main.py` with the path to your target video.
