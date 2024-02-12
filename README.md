@@ -30,9 +30,13 @@ We use the same Neural Network as for the one using sentiment analysis but we ch
 The LSTM with sentiment analysis predicted the values better than the naive LSTM as the following graphs demonstrate:
 
 LSTM with sentiment analysis:
-![image](https://github.com/mediolanum1/financial_forecasting/assets/71010075/acbacce1-eafd-4e1b-a383-7c08fc00381b)
+
+![image](https://github.com/mediolanum1/financial_forecasting/assets/71010075/ad833645-fb8b-43de-a1e3-47eb030ffacd)
+
+
 
 naive LSTM:
+
 ![image](https://github.com/mediolanum1/financial_forecasting/assets/71010075/62140d0a-6af9-4ef6-a6a1-012273ee4c4c)
 
 This can also be seen after a small simulation when "investing" 10000$ over 100 days. This is done by predicting the next day and "buying" the stock only if the model thinks the stock will go up ("selling" it at the end of the day and repeating it every day").  
