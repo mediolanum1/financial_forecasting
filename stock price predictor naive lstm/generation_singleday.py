@@ -17,7 +17,7 @@ dataset.append(df["Close"].tolist())
 df = pd.read_csv('Tesla.csv')
 dataset.append(df["Close"].tolist())
 
-#same as in main except we only take the data for each sepetate company at a time
+#same as in training except we only take the data for each sepetate company at a time
 def get_data(strt,seq_length,data_length,dataset):
     training=[]
     validation=[]
