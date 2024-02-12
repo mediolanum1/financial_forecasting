@@ -12,10 +12,13 @@ def create_model(in_shape,output_shape):
     model.summary()
     return model
 
-#for now we are just using close of the last 60 days to predict next day's close
-inp_sp=[90,1]
+#We are using the close price of the last 60 days to predict the next day's close (this one will be used for pure LSTM)
+#inp_sp=[60,1]
+
+#We take the closing price the volume and sentiment analysis of a newspaper on that day and predict the next day's closing price
+inp_sp=[3,1]
 out_sp=1
 model=create_model(inp_sp,out_sp)
 
 #save model
-model.save("predictor5")
+model.save("predictor")
