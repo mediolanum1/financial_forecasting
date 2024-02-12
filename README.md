@@ -1,4 +1,4 @@
-![image](https://github.com/mediolanum1/financial_forecasting/assets/105869692/c4b14840-0180-4c07-be9d-3b4b4d6d83f5)![Project Header](/figures/label.PNG)
+
 
 # Financial Forecasting
 
