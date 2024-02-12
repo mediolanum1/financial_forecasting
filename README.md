@@ -22,7 +22,7 @@ To get the **sentiment score** we use a pre-trained model BERT. We use news arti
 
 ## Implementation of naive LSTM
 
-We use the same Neural Network as for the one using sentiment analysis but we change the input. We give the LSTM the close prices of the last 60 days and the output of the LSTM will be the closing price of the next day. 
+We use the same Neural Network as for the one using sentiment analysis but we change the input. We give the LSTM the close prices of the last 60 days and the output of the LSTM will be the closing price of the next day. This model has been trained on many different companies (not just apple) as this helped with overfitting which was an issue in the earlier models. The advantage of using a simpler model is that it can predict the price over many days as opposed to a single day. 
 
 
 ## Comparing the 2 models
@@ -53,6 +53,7 @@ In conclusion, we can deduce that the analysis of the news is a strong help in p
 The file `main.ipynb` contains all the code needed for data preparation, model creation, training, and prediction.
 This repo also contains a trained model, processed dataset, and all necessary data for `main.ipynb`, so you don't have to train the model or download files and ect. 
 
+The file stock predictor naive lstm contains the naive LSTM. the creation of the model, the training of the model and 'generation.py' gives predictions based on the model selected. predictor4 works the best based on our testing. 'generation.py' can be run as is as long as you have all the files in that folder.
 
 To change the video that is being used for detection, replace the `video_path` value in line 18 of `main.py` with the path to your target video.
 
