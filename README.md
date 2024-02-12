@@ -20,6 +20,22 @@ We use an LSTM and an GRU both with 50 units to predict the price of the stock, 
 
 To get the **sentiment score** we use a pre-trained model BERT. We use news article's titles from CNBC website, feed them into BERT model to get sentiment score that ranges from -1 to 1, where number closer to -1 means that article title is most likely negative, number closer to 0 means that title is neutral and if number is leaning towards +1 then article title is most likely positive.  
 
+## Usage
+
+The file `main.py` in the `src` directory contains a simple interface for using the program.
+
+To execute, use:
+
+```sh
+python ./src/main.py
+```
+
+To change the video that is being used for detection, replace the `video_path` value in line 18 of `main.py` with the path to your target video.
+
+Additionally, the algorithm can be tested with a live feed from http://66.119.104.155/mjpg/video.mjpg.
+
+The example video was sourced from: [Fire: Fountaingrove in Santa Rosa (Monday, Oct. 9)](https://www.youtube.com/watch?v=TR-9IdfqaKY)
+
 
 
 ## Authors
