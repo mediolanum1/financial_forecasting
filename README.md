@@ -15,7 +15,7 @@ quantified using percentage error. Index Terms—Time series, Stock market, RNN,
 
 ## Usage
 
-The file `main.ipynb` contains all the code needed for data preparation, model creation, training, and prediction. 
+The file `main.ipynb` contains all the code needed for data preparation, model creation, training, and making predictions. 
 File  `predict.ipynb` contains code for making predictions only without the need for training model or processing dataset thats why this repo also contains a trained model, processed dataset, and all necessary data for `predict.ipynb`, so you don't have to train the model or download files and etc. 
 
 If you want to see how data is processed, model trained and ect go to `main.ipynb` and run all the cells. If you want to see only the end result use `predict.ipynb`.
