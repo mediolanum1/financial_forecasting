@@ -21,4 +21,4 @@ out_sp=1
 model=create_model(inp_sp,out_sp)
 
 #save model
-model.save("predictor")
+model.save("predictor6")
