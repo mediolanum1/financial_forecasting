@@ -32,9 +32,9 @@ def get_data(strt,seq_length,data_length,dataset):
 
 #if you want to have day by day prediction
 seq_len=60
-dataset_len=200
+dataset_len=100
 trainining=[]
-trainining,correct=get_data(len(dataset[company])-(200+seq_len),seq_len,dataset_len,dataset[company])
+trainining,correct=get_data(520,seq_len,dataset_len,dataset[company])
 date=[]
 for i in range(dataset_len):
     date.append(i)
