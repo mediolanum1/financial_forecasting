@@ -20,6 +20,9 @@ File  `predict.ipynb` contains code for making predictions only without the need
 
 If you want to see how data is processed, model trained and ect go to `main.ipynb` and run all the cells. If you want to see only the end result use `predict.ipynb`.
 
+The file stock predictor naive lstm contains the naive LSTM. the creation of the model, the training of the model and 'generation.py' gives predictions based on the model selected.
+Predictor4 works the best based on our testing. 'generation.py' can be run as is as long as you have all the files in that folder.
+
 ## Implementation of LSTM with sentiment analysis
 
 We use an LSTM and an GRU both with 50 units to predict the price of the stock, as an input for model we give information for the past day about stock's closing prices, stock's volumes and **sentiment score**. We assume that these 3 are the most important parameters as for example information about lowest price or highest price that dataset has doesn't give much information as for example price in the end of the day when news about stock already affected price and etc. 
@@ -28,7 +31,7 @@ To get the **sentiment score** we use a pre-trained model BERT. We use news arti
 
 ## Implementation of naive LSTM
 
-We use the same Neural Network as for the one using sentiment analysis but we change the input. We give the LSTM the close prices of the last 60 days and the output of the LSTM will be the closing price of the next day. 
+We use the same Neural Network as for the one using sentiment analysis but we change the input. We give the LSTM the close prices of the last 60 days and the output of the LSTM will be the closing price of the next day. This model has been trained on many different companies (not just apple) as this helped with overfitting which was an issue in the earlier models. The advantage of using a simpler model is that it can predict the price over many days as opposed to a single day. 
 
 
 ## Comparing the 2 models
@@ -51,7 +54,6 @@ The LSTM with sentiment analysis gained 850$
 If the LSTM would predict accurately every day it would have gained 5700$
 
 In conclusion, we can deduce that the analysis of the news is a strong help in predicting the stock price but maybe we could add other elements to help the model get closer to the maximum gain.
-
 
 ## Authors
 
