@@ -13,6 +13,15 @@ in the data using deep learning architectures. In this work, we use three differ
 and compare their performance. We are applying a sliding window approach for predicting future values on a short term basis. The performance of the models was
 quantified using percentage error. Index Terms—Time series, Stock market, RNN,LSTM,CNN
 
+## Usage
+
+The file `main.ipynb` contains all the code needed for data preparation, model creation, training, and making predictions. 
+File  `predict.ipynb` contains code for making predictions only without the need for training model or processing dataset thats why this repo also contains a trained model, processed dataset, and all necessary data for `predict.ipynb`, so you don't have to train the model or download files and etc. 
+
+If you want to see how data is processed, model trained and ect go to `main.ipynb` and run all the cells. If you want to see only the end result use `predict.ipynb`.
+
+The file stock predictor naive lstm contains the naive LSTM. the creation of the model, the training of the model and 'generation.py' gives predictions based on the model selected.
+Predictor4 works the best based on our testing. 'generation.py' can be run as is as long as you have all the files in that folder.
 
 ## Implementation of LSTM with sentiment analysis
 
@@ -45,23 +54,6 @@ The LSTM with sentiment analysis gained 850$
 If the LSTM would predict accurately every day it would have gained 5700$
 
 In conclusion, we can deduce that the analysis of the news is a strong help in predicting the stock price but maybe we could add other elements to help the model get closer to the maximum gain.
-
-
-
-## Usage
-
-The file `main.ipynb` contains all the code needed for data preparation, model creation, training, and prediction.
-This repo also contains a trained model, processed dataset, and all necessary data for `main.ipynb`, so you don't have to train the model or download files and ect. 
-
-The file stock predictor naive lstm contains the naive LSTM. the creation of the model, the training of the model and 'generation.py' gives predictions based on the model selected. predictor4 works the best based on our testing. 'generation.py' can be run as is as long as you have all the files in that folder.
-
-To change the video that is being used for detection, replace the `video_path` value in line 18 of `main.py` with the path to your target video.
-
-Additionally, the algorithm can be tested with a live feed from http://66.119.104.155/mjpg/video.mjpg.
-
-The example video was sourced from: [Fire: Fountaingrove in Santa Rosa (Monday, Oct. 9)](https://www.youtube.com/watch?v=TR-9IdfqaKY)
-
-
 
 ## Authors
 
