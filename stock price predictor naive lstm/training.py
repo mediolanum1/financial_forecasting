@@ -50,7 +50,7 @@ val_cor=tf.constant(val_cor)
 #print(tf.shape(correct))
 
 #train the model on the data and save it (batch_size and epochs can be played around with to find the ideal numbers)
-history = model.fit(trainining, correct, epochs=300, batch_size=32, validation_data=(val,val_cor))
+history = model.fit(trainining, correct, epochs=900, batch_size=32, validation_data=(val,val_cor))
 model.save("predictor4")
 
 
