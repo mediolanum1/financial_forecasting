@@ -25,11 +25,7 @@ To get the **sentiment score** we use a pre-trained model BERT. We use news arti
 The file `predict.ipynb` contains a programm that will make a predicition and compare it with actuall data.
 This repo contains trained model, processed dataset and all necessary data for `predict.ipynb` to work so download all files in repo. 
 
-To execute, use:
 
-```sh
-python ./src/main.py
-```
 
 To change the video that is being used for detection, replace the `video_path` value in line 18 of `main.py` with the path to your target video.
 
