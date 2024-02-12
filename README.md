@@ -30,7 +30,7 @@ After combining these datasets and adding the sentiment_score field for each art
 ![Data](/figures/data.PNG)
 
 
-We use an LSTM and an GRU both with 50 units to predict the price of the stock, as an input for model we give information for the past day about stock's closing prices, stock's volumes and **sentiment score**. We assume that these 3 are the most important parameters as for example information about lowest price or highest price that dataset has doesn't give much information as for example price in the end of the day when news about stock already affected price and etc. 
+We use an **LSTM** and an **GRU** both with 50 units to predict the price of the stock, as an input for model we give information for the past day about stock's closing prices, stock's volumes and **sentiment score**. We assume that these 3 are the most important parameters as for example information about lowest price or highest price that dataset has doesn't give much information as for example price in the end of the day when news about stock already affected price and etc. 
 
 ![Model Structure](/figures/model.PNG)
 
