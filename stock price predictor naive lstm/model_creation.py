@@ -18,4 +18,4 @@ out_sp=1
 model=create_model(inp_sp,out_sp)
 
 #save model
-model.save("predictor4")
+model.save("stock price predictor naive lstm/predictors/predictor4")
