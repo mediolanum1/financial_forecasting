@@ -1,4 +1,4 @@
-
+![Project Header](/figures/label.PNG)
 
 # Financial Forecasting
 
